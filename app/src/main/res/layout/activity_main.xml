@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="34dp">
+
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn"
+        android:text="increment"
+        android:onClick="increment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/txt"
+        app:layout_constraintStart_toStartOf="@id/txt"
+        app:layout_constraintTop_toBottomOf="@id/txt"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:text="Decrement"
+        android:onClick="decrement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/btn"
+        app:layout_constraintStart_toStartOf="@id/btn"
+        app:layout_constraintTop_toBottomOf="@id/btn"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
